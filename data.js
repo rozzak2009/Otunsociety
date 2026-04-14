@@ -185,5 +185,10 @@ const otunEvents = [
         src: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600&auto=format&fit=crop",
         title: "V5 - Artistic Vision",
         link: "https://www.tiktok.com/@otunsociety/video/7560462444259314964"
+    },
+    {
+        src: "https://images.unsplash.com/photo-1459749411177-042180ce673f?q=80&w=600&auto=format&fit=crop",
+        title: "V6 - Visual Harmony",
+        link: "https://www.tiktok.com/@otunsociety/video/7578772681596636423"
     }
 ];

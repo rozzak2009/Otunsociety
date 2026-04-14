@@ -146,3 +146,24 @@ const talentedMembers = [
         ctaText: "Listen on SoundCloud"
     }
 ];
+
+const otunSeasons = [
+    {
+        src: "https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?q=80&w=600&auto=format&fit=crop",
+        title: "Season 1",
+        link: "#"
+    },
+    {
+        src: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=600&auto=format&fit=crop",
+        title: "Season 2",
+        link: "#"
+    }
+];
+
+const otunEvents = [
+    {
+        src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop",
+        title: "V1 - The Beginning",
+        link: "https://www.tiktok.com/@otunsociety/video/7489314020986539272"
+    }
+];

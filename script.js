@@ -269,13 +269,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 ? `<video src="${item.src}" autoplay loop muted playsinline style="width:100%; height:100%; object-fit:cover; pointer-events:none;"></video>`
                 : `<img src="${item.src}" alt="${item.title}" style="width:100%; height:100%; object-fit:cover;">`;
 
+            const itemLink = item.link || '#';
+            const externalAttr = itemLink.startsWith('http') ? 'target="_blank"' : '';
+
             return `
-                <div class="slider-item">
+                <a href="${itemLink}" ${externalAttr} class="slider-item">
                     ${mediaTag}
                     <div class="slider-overlay">
                         <span class="slider-title">${item.title}</span>
                     </div>
-                </div>
+                </a>
             `;
         }).join('');
         

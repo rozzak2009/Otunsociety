@@ -195,5 +195,10 @@ const otunEvents = [
         src: "https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=600&auto=format&fit=crop",
         title: "V7 - Emotional Depth",
         link: "https://www.tiktok.com/@otunsociety/video/7585824590530628885"
+    },
+    {
+        src: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=600&auto=format&fit=crop",
+        title: "V8 - Masterful Craft",
+        link: "https://www.tiktok.com/@otunsociety/video/7601833150280437000"
     }
 ];

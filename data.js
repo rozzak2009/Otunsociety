@@ -149,12 +149,12 @@ const talentedMembers = [
 
 const otunSeasons = [
     {
-        src: "https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?q=80&w=600&auto=format&fit=crop",
+        src: "https://picsum.photos/seed/s1/600/400",
         title: "Season 1",
         link: "#"
     },
     {
-        src: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=600&auto=format&fit=crop",
+        src: "https://picsum.photos/seed/s2/600/400",
         title: "Season 2",
         link: "#"
     }
@@ -162,57 +162,57 @@ const otunSeasons = [
 
 const otunEvents = [
     {
-        src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop",
+        src: "https://picsum.photos/seed/v1/600/400",
         title: "V1 - The Beginning",
         link: "https://www.tiktok.com/@otunsociety/video/7489314020986539272"
     },
     {
-        src: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=600&auto=format&fit=crop",
+        src: "https://picsum.photos/seed/v2/600/400",
         title: "V2 - The Evolution",
         link: "https://www.tiktok.com/@otunsociety/video/7524562430899326264"
     },
     {
-        src: "https://images.unsplash.com/photo-1514525253361-bee8718a74a2?q=80&w=600&auto=format&fit=crop",
+        src: "https://picsum.photos/seed/v3/600/400",
         title: "V3 - Creative Peak",
         link: "https://www.tiktok.com/@otunsociety/video/7543939656996457734"
     },
     {
-        src: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=600&auto=format&fit=crop",
+        src: "https://picsum.photos/seed/v4/600/400",
         title: "V4 - Cinematic Journey",
         link: "https://www.tiktok.com/@otunsociety/video/7547998393189043512"
     },
     {
-        src: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600&auto=format&fit=crop",
+        src: "https://picsum.photos/seed/v5/600/400",
         title: "V5 - Artistic Vision",
         link: "https://www.tiktok.com/@otunsociety/video/7560462444259314964"
     },
     {
-        src: "https://images.unsplash.com/photo-1459749411177-042180ce673f?q=80&w=600&auto=format&fit=crop",
+        src: "https://picsum.photos/seed/v6/600/400",
         title: "V6 - Visual Harmony",
         link: "https://www.tiktok.com/@otunsociety/video/7578772681596636423"
     },
     {
-        src: "https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=600&auto=format&fit=crop",
+        src: "https://picsum.photos/seed/v7/600/400",
         title: "V7 - Emotional Depth",
         link: "https://www.tiktok.com/@otunsociety/video/7585824590530628885"
     },
     {
-        src: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=600&auto=format&fit=crop",
+        src: "https://picsum.photos/seed/v8/600/400",
         title: "V8 - Masterful Craft",
         link: "https://www.tiktok.com/@otunsociety/video/7601833150280437000"
     },
     {
-        src: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop",
+        src: "https://picsum.photos/seed/v9/600/400",
         title: "V9 - Technical Brilliance",
         link: "https://www.tiktok.com/@otunsociety/video/7603997686697659668"
     },
     {
-        src: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=600&auto=format&fit=crop",
+        src: "https://picsum.photos/seed/v10/600/400",
         title: "V10 - Boundary Breaker",
         link: "https://www.tiktok.com/@otunsociety/video/7620623340650106133"
     },
     {
-        src: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop",
+        src: "https://picsum.photos/seed/v11/600/400",
         title: "V11 - The Ultimate Chapter",
         link: "https://www.tiktok.com/@otunsociety/video/7626289684225871124"
     }

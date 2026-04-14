@@ -16,6 +16,29 @@
 </head>
 
 <body>
+    <!-- Settings Sidebar -->
+    <div class="settings-sidebar" id="settings-sidebar">
+        <div class="settings-header">
+            <h3>Settings</h3>
+            <button id="settings-close" class="close-sidebar"><i class="ri-close-line"></i></button>
+        </div>
+        <div class="settings-content">
+            <div class="settings-group">
+                <label>Appearance</label>
+                <button id="theme-toggle-sidebar" class="settings-item">
+                    <i class="ri-sun-fill"></i>
+                    <span>Change Brightness</span>
+                </button>
+            </div>
+            <!-- Future settings can go here -->
+        </div>
+    </div>
+
+    <!-- Floating Settings Toggle -->
+    <button id="settings-toggle" class="settings-btn" aria-label="Open Settings">
+        <i class="ri-settings-4-line"></i>
+    </button>
+
     <!-- Premium Navigation -->
     <div class="nav-wrapper">
         <nav class="navbar" id="navbar">
@@ -33,9 +56,7 @@
                     <li><a href="index.html#gallery">Featured Edits</a></li>
                 </ul>
                 <div class="nav-controls">
-                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
-                        <i class="ri-moon-fill"></i>
-                    </button>
+                    <!-- Moved to Settings Sidebar -->
                     <div class="menu-toggle" id="mobile-menu">
                         <i class="ri-menu-3-line"></i>
                     </div>

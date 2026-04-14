@@ -33,28 +33,54 @@ document.addEventListener('DOMContentLoaded', () => {
        2. THEME & HERO SLIDER LOGIC
        ========================================= */
        
-    // Theme Toggle
-    const themeBtn = document.getElementById('theme-toggle');
+    // Settings Sidebar Logic
+    const settingsBtn = document.getElementById('settings-toggle');
+    const settingsSidebar = document.getElementById('settings-sidebar');
+    const settingsClose = document.getElementById('settings-close');
+    const themeBtnSidebar = document.getElementById('theme-toggle-sidebar');
     const rootEl = document.documentElement;
-    const currentTheme = localStorage.getItem('theme') || 'dark';
-    
-    if (currentTheme === 'light') {
-        rootEl.setAttribute('data-theme', 'light');
-        themeBtn.innerHTML = '<i class="ri-sun-fill"></i>';
-    }
 
-    themeBtn.addEventListener('click', () => {
-        let theme = rootEl.getAttribute('data-theme');
-        if (theme === 'light') {
-            rootEl.removeAttribute('data-theme');
-            localStorage.setItem('theme', 'dark');
-            themeBtn.innerHTML = '<i class="ri-moon-fill"></i>';
-        } else {
-            rootEl.setAttribute('data-theme', 'light');
-            localStorage.setItem('theme', 'light');
-            themeBtn.innerHTML = '<i class="ri-sun-fill"></i>';
+    const toggleSidebar = () => settingsSidebar.classList.toggle('open');
+    if (settingsBtn) settingsBtn.addEventListener('click', toggleSidebar);
+    if (settingsClose) settingsClose.addEventListener('click', toggleSidebar);
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+        if (settingsSidebar && settingsSidebar.classList.contains('open') && 
+            !settingsSidebar.contains(e.target) && !settingsBtn.contains(e.target)) {
+            settingsSidebar.classList.remove('open');
         }
     });
+
+    // Theme Toggle Logic
+    const updateThemeIcon = (theme) => {
+        if (theme === 'light') {
+            themeBtnSidebar.innerHTML = '<i class="ri-sun-fill"></i><span>Change Brightness</span>';
+        } else {
+            themeBtnSidebar.innerHTML = '<i class="ri-moon-fill"></i><span>Change Brightness</span>';
+        }
+    };
+
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    if (currentTheme === 'light') {
+        rootEl.setAttribute('data-theme', 'light');
+    }
+    if (themeBtnSidebar) updateThemeIcon(currentTheme);
+
+    if (themeBtnSidebar) {
+        themeBtnSidebar.addEventListener('click', () => {
+            let theme = rootEl.getAttribute('data-theme');
+            if (theme === 'light') {
+                rootEl.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'dark');
+                updateThemeIcon('dark');
+            } else {
+                rootEl.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+                updateThemeIcon('light');
+            }
+        });
+    }
 
     // Hero Slider
     const slides = document.querySelectorAll('.hero-slide');

@@ -142,7 +142,7 @@ const talentedMembers = [
         talent: "Music Producer",
         link: "https://soundcloud.com/rizky-alfariz-879845258",
         icon: "ri-soundcloud-fill",
-        image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=300&auto=format&fit=crop",
+        image: "https://i1.sndcdn.com/avatars-cqQxPPBT4wtW5CuK-mqKDxg-t1080x1080.jpg",
         ctaText: "Listen on SoundCloud"
     }
 ];

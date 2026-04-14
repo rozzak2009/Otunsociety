@@ -50,6 +50,29 @@ const tiktokMembers = [
         link: "https://www.tiktok.com/@member.rookie",
         role: "member"
     }
+];const talentedMembers = [
+    {
+        name: "Skyla Music",
+        talent: "Music Producer",
+        link: "https://open.spotify.com/artist/example",
+        icon: "ri-music-2-fill",
+        image: "https://images.unsplash.com/photo-1514525253361-bee8718a74a2?q=80&w=300&auto=format&fit=crop",
+        ctaText: "Listen Now"
+    },
+    {
+        name: "DevX Studio",
+        talent: "App Developer",
+        link: "https://play.google.com/store/apps/details?id=example",
+        icon: "ri-apps-2-fill",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=300&auto=format&fit=crop",
+        ctaText: "Download Apk"
+    },
+    {
+        name: "ArtVortex",
+        talent: "3D Artist",
+        link: "https://www.artstation.com/example",
+        icon: "ri-dv-fill",
+        image: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=300&auto=format&fit=crop",
+        ctaText: "View Portfolio"
+    }
 ];
-
-

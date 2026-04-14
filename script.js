@@ -272,6 +272,35 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof otunEvents !== 'undefined') renderNetflixSlider('slider-events', otunEvents, 'V', 11);
     else renderNetflixSlider('slider-events', null, 'V', 11);
 
+    /* =========================================
+       7.5 RENDER TALENTS
+       ========================================= */
+       
+    const renderTalents = () => {
+        const container = document.getElementById('talents-container');
+        if (!container || typeof talentedMembers === 'undefined') return;
+
+        container.innerHTML = talentedMembers.map(item => `
+            <div class="talent-card fade-up">
+                <div class="talent-image-wrapper">
+                    <img src="${item.image}" alt="${item.name}">
+                    <div class="talent-icon-badge">
+                        <i class="${item.icon}"></i>
+                    </div>
+                </div>
+                <div class="talent-info">
+                    <h3>${item.name}</h3>
+                    <p>${item.talent}</p>
+                    <a href="${item.link}" target="_blank" class="talent-cta">
+                        ${item.ctaText} <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+            </div>
+        `).join('');
+    };
+
+    renderTalents();
+
     observeFadeElements();
 
     /* =========================================

@@ -767,6 +767,128 @@ footer p {
 }
 
 /* ==========================================================================
+   Members Talents Section
+   ========================================================================== */
+.talents-section {
+    background-color: var(--bg-main);
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.talents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.talent-card {
+    background: var(--bg-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 1.5rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.talent-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: var(--accent-red);
+    box-shadow: 0 20px 40px rgba(230, 0, 35, 0.15);
+}
+
+.talent-image-wrapper {
+    width: 100%;
+    height: 200px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.talent-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.talent-card:hover .talent-image-wrapper img {
+    transform: scale(1.1);
+}
+
+.talent-icon-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--gradient-red);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 15px rgba(230, 0, 35, 0.4);
+    z-index: 2;
+}
+
+.talent-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+}
+
+.talent-info p {
+    color: var(--accent-red);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.talent-cta {
+    width: 100%;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    transition: var(--transition);
+    text-transform: capitalize;
+}
+
+.talent-card:hover .talent-cta {
+    background: var(--gradient-red);
+    border-color: transparent;
+    box-shadow: 0 8px 20px rgba(230, 0, 35, 0.3);
+}
+
+[data-theme="light"] .talent-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .talent-cta {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .talent-card:hover .talent-cta {
+    color: white;
+}
+
+/* ==========================================================================
    Netflix Slider (Horizontal Events)
    ========================================================================== */
 .events-section {

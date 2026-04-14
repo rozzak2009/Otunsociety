@@ -217,3 +217,17 @@ const otunEvents = [
         link: "https://www.tiktok.com/@otunsociety/video/7626289684225871124"
     }
 ];
+
+const otunPartners = [
+    { name: "DoveNure Family", link: "#", followers: "0" },
+    { name: "AVA TwntyFour", link: "#", followers: "0" },
+    { name: "Zero Zero Seven", link: "#", followers: "0" },
+    { name: "Four Eleven", link: "#", followers: "0" },
+    { name: "Sekte Asik Amat", link: "#", followers: "0" },
+    { name: "Heaven", link: "#", followers: "0" },
+    { name: "CatteButterfly", link: "#", followers: "0" },
+    { name: "satoru", link: "#", followers: "0" },
+    { name: "Darkness", link: "#", followers: "0" },
+    { name: "Mekdi Gen 2", link: "#", followers: "0" },
+    { name: "matcha unity", link: "#", followers: "0" }
+];

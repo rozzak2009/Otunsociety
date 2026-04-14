@@ -320,7 +320,39 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     };
 
-    renderTalents();
+    /* =========================================
+       8. RENDER PARTNERS (CO-OPERATED)
+       ========================================= */
+       
+    const renderPartners = () => {
+        const container = document.getElementById('partners-container');
+        if(!container || typeof otunPartners === 'undefined') return;
+
+        container.innerHTML = otunPartners.map((partner, index) => {
+            // Use picsum for placeholder backgrounds with unique seeds
+            const bgImage = `https://picsum.photos/seed/partner_${index}/600/800`;
+            
+            return `
+                <a href="${partner.link}" target="_blank" class="partner-card fade-up">
+                    <div class="partner-bg" style="background-image: url('${bgImage}');"></div>
+                    <div class="partner-overlay"></div>
+                    <div class="partner-content">
+                        <h3 class="partner-name">${partner.name}</h3>
+                    </div>
+                    <div class="partner-stats">
+                        <div class="partner-stat-item">
+                            <i class="ri-user-follow-line"></i> 
+                            <span class="follower-count" data-link="${partner.link}">${partner.followers || '0'}</span> Followers
+                        </div>
+                    </div>
+                </a>
+            `;
+        }).join('');
+    };
+
+    // Page-specific initialization
+    if (document.getElementById('talents-container')) renderTalents();
+    if (document.getElementById('partners-container')) renderPartners();
 
     observeFadeElements();
 
@@ -329,9 +361,16 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================= */
        
     const fetchRealtimeStats = async () => {
-        for (const item of tiktokMembers) {
+        const allMembers = [...tiktokMembers];
+        if (typeof otunPartners !== 'undefined') {
+            otunPartners.forEach(p => {
+                if(p.link !== "#") allMembers.push({ link: p.link, role: 'partner', name: p.name });
+            });
+        }
+
+        for (const item of allMembers) {
             const username = getUsernameFromLink(item.link);
-            if(username === "unknown") continue;
+            if(username === "unknown" || username === "TikTokUser" || username === "Member") continue;
 
             try {
                 const url = `https://www.tikwm.com/api/user/info?unique_id=${username}`;
@@ -365,6 +404,16 @@ document.addEventListener('DOMContentLoaded', () => {
                         card.querySelector('.val-followers').textContent = realtimeFollowers;
                         card.querySelector('.val-posts').textContent = realtimePosts;
                         if(realtimeAvatar) card.querySelector('.avatar-img').src = realtimeAvatar;
+                    }
+
+                    // Update Partner UI if exists
+                    const partnerStat = document.querySelector(`.follower-count[data-link*="${username}"]`);
+                    if(partnerStat) {
+                        partnerStat.textContent = realtimeFollowers;
+                        const partnerCard = partnerStat.closest('.partner-card');
+                        if(partnerCard && realtimeAvatar) {
+                            partnerCard.querySelector('.partner-bg').style.backgroundImage = `url('${realtimeAvatar}')`;
+                        }
                     }
                     
                     // Re-sort mechanism conceptually handled on refresh to avoid layout jumping

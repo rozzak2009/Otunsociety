@@ -1007,3 +1007,122 @@ footer p {
     margin-bottom: 0.2rem;
     text-shadow: 0 2px 5px rgba(0,0,0,0.8);
 }
+/* ==========================================================================
+   Partners Section (Standalone Page)
+   ========================================================================== */
+.partners-hero {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    background: var(--bg-secondary);
+}
+
+.partners-hero h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.partner-card {
+    position: relative;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--bg-glass);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition);
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px) brightness(0.4);
+    transition: var(--transition);
+    z-index: 0;
+}
+
+.partner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 100%);
+    z-index: 1;
+}
+
+.partner-card:hover .partner-bg {
+    transform: scale(1.1);
+    filter: blur(0px) brightness(0.6);
+}
+
+.partner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+.partner-name {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+}
+
+.partner-stats {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 2;
+}
+
+.partner-stat-item {
+    background: var(--gradient-red);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0 4px 15px rgba(230, 0, 35, 0.3);
+}
+
+.partner-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-red);
+    box-shadow: 0 20px 40px rgba(230, 0, 35, 0.2);
+}
+
+@media (max-width: 768px) {
+    .partners-hero h1 {
+        font-size: 2.5rem;
+    }
+}

@@ -165,5 +165,10 @@ const otunEvents = [
         src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop",
         title: "V1 - The Beginning",
         link: "https://www.tiktok.com/@otunsociety/video/7489314020986539272"
+    },
+    {
+        src: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=600&auto=format&fit=crop",
+        title: "V2 - The Evolution",
+        link: "https://www.tiktok.com/@otunsociety/video/7524562430899326264"
     }
 ];

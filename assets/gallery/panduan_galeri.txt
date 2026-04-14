@@ -1,0 +1,4 @@
+Simpan semua karya visual Anda (berformat MP4, JPG, PNG, atau GIF) ke dalam folder ini.
+Misalnya: "video_keren.mp4", "manipulasi_3d.jpg".
+Setelah disalin ke sini, tambahkan ke file data.js di bagian galleryMasterpieces dengan format:
+src: "assets/gallery/video_keren.mp4".

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otunsociety - Premium Editing Community</title>
+    <meta name="description" content="Let's Create a very interesting work with us.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Remix Icons for modern icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Premium Navigation -->
+    <div class="nav-wrapper">
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">
+                    <img src="assets/logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none'">
+                    <span class="logo-text">OTUN<span>SOCIETY</span></span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#gallery">Featured Edits</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                        <i class="ri-moon-fill"></i>
+                    </button>
+                    <div class="menu-toggle" id="mobile-menu">
+                        <i class="ri-menu-3-line"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <!-- Hero Background Slider -->
+        <div class="hero-bg-slider" id="hero-slider">
+            <div class="hero-slide active" style="background-image: url('assets/hero/1.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('assets/hero/2.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('assets/hero/3.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-up">Redefining Visual <span class="highlight">Creativity</span></h1>
+            <p class="fade-up delay-1">Komunitas eksklusif bagi para editor yang ingin menembus batas visual dan
+                menciptakan karya luar biasa.</p>
+            <div class="hero-buttons fade-up delay-2">
+                <a href="https://chat.whatsapp.com/DQ5JTV3s3HaAWPWybXsZ1z" class="btn btn-primary" target="_blank">
+                    <i class="ri-whatsapp-line"></i> Gabung Sekarang
+                </a>
+                <a href="#events" class="btn btn-secondary">Explore Works</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- TikTok Team Section -->
+    <section class="team-section" id="team">
+        <div class="section-container">
+            <div class="section-title fade-up">
+                <h2>The <span class="highlight">Pillars</span></h2>
+                <p>Pemimpin Otunsociety.</p>
+            </div>
+
+            <!-- Owner -->
+            <div class="team-tier tier-owner fade-up">
+                <h3 class="tier-label">👑 Owner</h3>
+                <div class="card-container" id="container-owner">
+                    <!-- Digenerate Otomatis Oleh JavaScript -->
+                </div>
+            </div>
+
+            <!-- Leader -->
+            <div class="team-tier tier-leader fade-up">
+                <h3 class="tier-label">⚔️ Leaders</h3>
+                <div class="card-container" id="container-leader">
+                    <!-- Digenerate Otomatis Oleh JavaScript -->
+                </div>
+            </div>
+
+            <!-- Admin -->
+            <div class="team-tier tier-admin fade-up">
+                <h3 class="tier-label">🛡️ Admins</h3>
+                <div class="card-container grid-3" id="container-admin">
+                    <!-- Digenerate Otomatis Oleh JavaScript -->
+                </div>
+            </div>
+
+            <!-- Member -->
+            <div class="team-tier tier-member fade-up">
+                <h3 class="tier-label">👥 Members</h3>
+                <div class="card-container-vertical" id="container-member">
+                    <!-- Digenerate Otomatis Oleh JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Otun Events & Seasons Section (Netflix Style) -->
+    <section class="events-section" id="events">
+        <div class="section-container">
+            <!-- Seasons -->
+            <div class="section-title fade-up">
+                <h2>Otun <span class="highlight">Seasons</span></h2>
+                <p>Rekam jejak musim legendaris dari komunitas kami.</p>
+            </div>
+
+            <div class="netflix-slider-container fade-up delay-1">
+                <div class="netflix-slider" id="slider-seasons">
+                    <!-- Digenerate Otomatis Oleh JavaScript -->
+                </div>
+            </div>
+
+            <!-- Events -->
+            <div class="section-title fade-up mt-5">
+                <h2>Our <span class="highlight">Events</span></h2>
+                <p>Rangkaian perayaan dan ajang unjuk kebolehan bergengsi.</p>
+            </div>
+
+            <div class="netflix-slider-container fade-up delay-1">
+                <div class="netflix-slider" id="slider-events">
+                    <!-- Digenerate Otomatis Oleh JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-container">
+            <div class="section-title fade-up">
+                <h2>Master<span class="highlight">pieces</span></h2>
+                <p>Sorotan mahakarya visual dari anggota Otunsociety.</p>
+            </div>
+
+            <div class="masonry-grid fade-up delay-1" id="gallery-container">
+                <!-- Digenerate Otomatis Oleh JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2 class="footer-logo">OTUN<span>SOCIETY</span></h2>
+            <p>Mendefinisikan Ulang Kreativitas Visual.</p>
+            <div class="social-links">
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-tiktok-fill"></i></a>
+                <a href="#"><i class="ri-discord-fill"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Otunsociety by rozzak_mcd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="data.js"></script>
+    <script src="assets/gallery_data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

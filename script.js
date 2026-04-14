@@ -91,12 +91,26 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // Strip out query params first
             let cleanUrl = url.split('?')[0];
+            if (cleanUrl.endsWith('/')) cleanUrl = cleanUrl.slice(0, -1);
+
             // If it contains @, extract the part after it
             if (cleanUrl.includes('@')) {
                 return cleanUrl.split('@')[1].replace(/\//g, '');
             } 
-            // If the user just inputted their username raw
-            return cleanUrl.replace(/\//g, '').trim();
+            
+            // Handle mobile/short links (vm.tiktok.com)
+            if (cleanUrl.includes('vm.tiktok.com')) {
+                return "TikTokUser";
+            }
+
+            // Try to get the last segment if it's not a domain
+            const parts = cleanUrl.split('/');
+            const lastPart = parts[parts.length - 1];
+            if (lastPart && !lastPart.includes('http') && !lastPart.includes('tiktok') && !lastPart.includes('.')) {
+                return lastPart;
+            }
+
+            return "Member";
         } catch(e) {
             return "unknown";
         }
@@ -150,13 +164,17 @@ document.addEventListener('DOMContentLoaded', () => {
        5. GENERATE HTML CARDS
        ========================================= */
        
-    const generateCardHTML = (member, isHorizontal = false) => {
+    const generateCardHTML = (member, isHorizontal = false, index = null) => {
         const horizontalClass = isHorizontal ? 'horizontal-card' : '';
-        // Entire card acts as a link to their TikTok profile
-        const profileUrl = `https://www.tiktok.com/@${member.username}`;
+        const profileUrl = member.username === "TikTokUser" || member.username === "Member" 
+            ? member.link 
+            : `https://www.tiktok.com/@${member.username}`;
+        
+        const numberTag = index !== null ? `<div class="card-number">${index}</div>` : '';
         
         return `
             <a href="${profileUrl}" target="_blank" class="tiktok-card glass-panel ${horizontalClass}" id="card-${member.username}">
+                ${numberTag}
                 <div class="card-header">
                     <div class="profile-pic">
                         <img src="${member.currentAvatar}" class="avatar-img" alt="${member.username}">
@@ -198,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check if member container exists (safeguard for compatibility)
     const memberContainer = document.getElementById('container-member');
     if(memberContainer) {
-        memberContainer.innerHTML = membersList.map(m => generateCardHTML(m, true)).join('');
+        memberContainer.innerHTML = membersList.map((m, idx) => generateCardHTML(m, true, idx + 1)).join('');
     }
 
     /* =========================================

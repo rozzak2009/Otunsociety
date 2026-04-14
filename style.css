@@ -431,6 +431,25 @@ section[id], header[id] {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(230, 0, 35, 0.1);
 }
 
+.card-number {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: var(--gradient-red);
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 800;
+    box-shadow: 0 4px 10px rgba(230, 0, 35, 0.4);
+    z-index: 10;
+    border: 2px solid var(--bg-main);
+}
+
 [data-theme="light"] .glass-panel {
     border: 1px solid rgba(0, 0, 0, 0.05);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);

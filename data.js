@@ -162,57 +162,57 @@ const otunSeasons = [
 
 const otunEvents = [
     {
-        src: "https://picsum.photos/seed/v1/600/400",
+        src: "https://p16-sign-sg.tiktokcdn.com/tos-alisg-p-0037/oUAE6DF75EDEvvAANfAgfwEwnvI8RY6BUA22YC~tplv-tiktokx-origin.image?dr=14575&x-expires=1776348000&x-signature=IeqVcsZtj%2FDMuEePcahp4C1OVdI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
         title: "V1 - The Beginning",
         link: "https://www.tiktok.com/@otunsociety/video/7489314020986539272"
     },
     {
-        src: "https://picsum.photos/seed/v2/600/400",
+        src: "https://p16-sign-va.tiktokcdn.com/tos-maliva-p-0068/ooBBGBAARYiAYI5KE7QcrAsLasEvvUdaynii3~tplv-tiktokx-origin.image?dr=14575&x-expires=1776348000&x-signature=tFvNMb1EUyi5ZRV7I2qqgMxTqd4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
         title: "V2 - The Evolution",
         link: "https://www.tiktok.com/@otunsociety/video/7524562430899326264"
     },
     {
-        src: "https://picsum.photos/seed/v3/600/400",
+        src: "https://p16-common-sign.tiktokcdn.com/tos-maliva-p-0068/okEbPLEBAxSCuB5UZaXIFsQEg2AKA1YiAOdii~tplv-tiktokx-origin.image?dr=14575&x-expires=1776348000&x-signature=IN8GbhfuKNo%2Bsf3w0%2FuDm4wjTD0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
         title: "V3 - Creative Peak",
         link: "https://www.tiktok.com/@otunsociety/video/7543939656996457734"
     },
     {
-        src: "https://picsum.photos/seed/v4/600/400",
+        src: "https://p16-common-sign.tiktokcdn.com/tos-maliva-p-0068/o0TJfAU5ekAJgEQiFfFfFIAYF4JAC6IoGADpRS~tplv-tiktokx-origin.image?dr=14575&x-expires=1776348000&x-signature=FvqYDnBK1Mv11KXhhktvbxy1RlU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
         title: "V4 - Cinematic Journey",
         link: "https://www.tiktok.com/@otunsociety/video/7547998393189043512"
     },
     {
-        src: "https://picsum.photos/seed/v5/600/400",
+        src: "https://p16-common-sign.tiktokcdn.com/tos-maliva-p-0068/os1GLEs1FIrAzHJYIAAkIeeNSU2fRQAO4CMjgW~tplv-tiktokx-origin.image?dr=14575&x-expires=1776348000&x-signature=amX1Cu34RDpNaiwsn5CncUI%2BgRA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
         title: "V5 - Artistic Vision",
         link: "https://www.tiktok.com/@otunsociety/video/7560462444259314964"
     },
     {
-        src: "https://picsum.photos/seed/v6/600/400",
+        src: "https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0037/okAfTFdJA0OR0DfXIVNBNRAWA6EELpyUgACtEA~tplv-tiktokx-origin.image?dr=14575&x-expires=1776348000&x-signature=fZvOEjXnlGcEJyLCsLzN1pmRuqo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
         title: "V6 - Visual Harmony",
         link: "https://www.tiktok.com/@otunsociety/video/7578772681596636423"
     },
     {
-        src: "https://picsum.photos/seed/v7/600/400",
+        src: "https://p16-sign-sg.tiktokcdn.com/tos-alisg-p-0037/oYjlEOB0AwAIcBIiAizLfAVAGbrBoi1JyOcRWC~tplv-tiktokx-origin.image?dr=14575&x-expires=1776348000&x-signature=I%2FQiH0VnBljZCjieIDW5jZX6mlA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
         title: "V7 - Emotional Depth",
         link: "https://www.tiktok.com/@otunsociety/video/7585824590530628885"
     },
     {
-        src: "https://picsum.photos/seed/v8/600/400",
+        src: "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oEQWhog83HgzAeMPJA8MXfAQAXQsfAIzGkfliJ~tplv-tiktokx-origin.image?dr=14575&x-expires=1776348000&x-signature=oyY4EqCQVWk%2FrNSoiYmSzouILPY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
         title: "V8 - Masterful Craft",
         link: "https://www.tiktok.com/@otunsociety/video/7601833150280437000"
     },
     {
-        src: "https://picsum.photos/seed/v9/600/400",
+        src: "https://p16-sign-sg.tiktokcdn.com/tos-alisg-p-0037/og0ESeaGbAnrGLAIAafIATFS0DDLEWbfTcabAC~tplv-tiktokx-origin.image?dr=14575&x-expires=1776348000&x-signature=uFm08Y9XH4%2Fd%2F%2Brt3Ep%2FMoSgsKo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
         title: "V9 - Technical Brilliance",
         link: "https://www.tiktok.com/@otunsociety/video/7603997686697659668"
     },
     {
-        src: "https://picsum.photos/seed/v10/600/400",
+        src: "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oAzDgKGHLezXg5BCvjSaAC4I1eoQQ4CeAT8NQI~tplv-tiktokx-origin.image?dr=14575&x-expires=1776348000&x-signature=BHyb3B1cmAdhv2ushJIloqa5UBU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
         title: "V10 - Boundary Breaker",
         link: "https://www.tiktok.com/@otunsociety/video/7620623340650106133"
     },
     {
-        src: "https://picsum.photos/seed/v11/600/400",
+        src: "https://p16-sign-sg.tiktokcdn.com/tos-alisg-p-0037/oYwXBWI7iiDAFiYWBP7BTYLdI9iBKr41AaAvE~tplv-tiktokx-origin.image?dr=14575&x-expires=1776348000&x-signature=1AyN9u%2BESIqX7gm7LvkF7ZAhSOA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
         title: "V11 - The Ultimate Chapter",
         link: "https://www.tiktok.com/@otunsociety/video/7626289684225871124"
     }

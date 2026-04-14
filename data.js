@@ -75,7 +75,7 @@ const tiktokMembers = [
         role: "member"
     },
     {
-        link: "https://vm.tiktok.com/ZS9LfTkPmqbY6-ga6z4/",
+        link: "https://www.tiktok.com/@presetjoy411?is_from_webapp=1&sender_device=pc",
         role: "member"
     },
     {

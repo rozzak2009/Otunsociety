@@ -170,5 +170,10 @@ const otunEvents = [
         src: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=600&auto=format&fit=crop",
         title: "V2 - The Evolution",
         link: "https://www.tiktok.com/@otunsociety/video/7524562430899326264"
+    },
+    {
+        src: "https://images.unsplash.com/photo-1514525253361-bee8718a74a2?q=80&w=600&auto=format&fit=crop",
+        title: "V3 - Creative Peak",
+        link: "https://www.tiktok.com/@otunsociety/video/7543939656996457734"
     }
 ];
